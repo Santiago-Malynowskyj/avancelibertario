@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+body {
+	overflow: hidden;
+}
+
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#EBD3F8; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	
+	
+
+	display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #EBD3F8;
+            font-family: 'Roboto', sans-serif;
+}
+.loading-container {
+	width: 300px;
+	height: 30px;
+	border: 2px solid #2E073F;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+.loading-bar {
+	width: 0;
+	height: 100%;
+	background-color: #2E073F;
+	animation: load 2s infinite;
+}
+
+@keyframes load {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
